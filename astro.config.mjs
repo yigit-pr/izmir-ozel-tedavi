@@ -1,12 +1,11 @@
 import { defineConfig } from 'astro/config';
-import react from '@astrojs/react';
-import tailwindvite from '@tailwindcss/vite';
+import tailwind from '@astrojs/tailwind';
+import react from '@astrojs/react'; // React kullanıyorsan
 
-// https://astro.build/config
 export default defineConfig({
-    integrations: [react()],
-    vite: {
-        plugins: [tailwindvite()],
-    },
-    output: 'static',
+  output: 'static',
+  integrations: [
+    tailwind(), // Burası önemli, parantez içinde tailwind() olmalı
+    react()
+  ],
 });
