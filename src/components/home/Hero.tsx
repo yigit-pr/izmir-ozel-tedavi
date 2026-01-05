@@ -1,6 +1,7 @@
 "use client";
 
-import Image from "next/image";
+// Replaced next/image with img for Astro
+
 import { Search } from "lucide-react";
 
 export default function Hero() {
@@ -43,12 +44,10 @@ export default function Hero() {
                 {/* Hero Image */}
                 <div className="hidden md:flex md:w-1/2 h-full items-center justify-center py-10">
                     <div className="relative w-full h-full max-h-[500px] aspect-[4/5] rounded-[48px] overflow-hidden shadow-2xl shadow-blue-900/20 bg-slate-200 border-4 border-white">
-                        <Image
+                        <img
                             src="/hero-doctor-2.png"
                             alt="Uzman Doktor"
-                            fill
-                            className="object-cover transition-transform duration-700 hover:scale-105"
-                            priority
+                            className="w-full h-full object-cover transition-transform duration-700 hover:scale-105 rounded-3xl"
                         />
                     </div>
                 </div>

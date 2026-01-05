@@ -1,4 +1,5 @@
-import Link from "next/link";
+// Replaced next/link with a for Astro
+
 import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
@@ -19,10 +20,10 @@ export default function Footer() {
                             Sağlığınız bizim için en değerli emanet. Modern tıp teknolojisi ve uzman hekim kadromuzla yanınızdayız.
                         </p>
                         <div className="flex space-x-4 pt-2">
-                            <Link href="#" className="text-gray-400 hover:text-action transition-colors"><Facebook className="w-5 h-5" /></Link>
-                            <Link href="#" className="text-gray-400 hover:text-action transition-colors"><Twitter className="w-5 h-5" /></Link>
-                            <Link href="#" className="text-gray-400 hover:text-action transition-colors"><Instagram className="w-5 h-5" /></Link>
-                            <Link href="#" className="text-gray-400 hover:text-action transition-colors"><Linkedin className="w-5 h-5" /></Link>
+                            <a href="#" className="text-gray-400 hover:text-action transition-colors"><Facebook className="w-5 h-5" /></a>
+                            <a href="#" className="text-gray-400 hover:text-action transition-colors"><Twitter className="w-5 h-5" /></a>
+                            <a href="#" className="text-gray-400 hover:text-action transition-colors"><Instagram className="w-5 h-5" /></a>
+                            <a href="#" className="text-gray-400 hover:text-action transition-colors"><Linkedin className="w-5 h-5" /></a>
                         </div>
                         <div className="pt-6">
                             <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Akreditasyonlarımız</p>
@@ -34,16 +35,16 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Quick Links */}
+                    {/* Quick as */}
                     <div>
                         <h3 className="text-lg font-bold mb-6 font-heading text-white">Hızlı Erişim</h3>
                         <ul className="space-y-3 text-gray-400 text-sm">
-                            <li><Link href="#" className="hover:text-action transition-colors">Hakkımızda</Link></li>
-                            <li><Link href="#" className="hover:text-action transition-colors">Hekimlerimiz</Link></li>
-                            <li><Link href="#" className="hover:text-action transition-colors">Kalite Politikamız</Link></li>
-                            <li><Link href="#" className="hover:text-action transition-colors">Anlaşmalı Kurumlar</Link></li>
-                            <li><Link href="#" className="hover:text-action transition-colors">Kişisel Verilerin Korunması</Link></li>
-                            <li><Link href="#" className="hover:text-action transition-colors">Bilgi Toplumu Hizmetleri</Link></li>
+                            <li><a href="#" className="hover:text-action transition-colors">Hakkımızda</a></li>
+                            <li><a href="#" className="hover:text-action transition-colors">Hekimlerimiz</a></li>
+                            <li><a href="#" className="hover:text-action transition-colors">Kalite Politikamız</a></li>
+                            <li><a href="#" className="hover:text-action transition-colors">Anlaşmalı Kurumlar</a></li>
+                            <li><a href="#" className="hover:text-action transition-colors">Kişisel Verilerin Korunması</a></li>
+                            <li><a href="#" className="hover:text-action transition-colors">Bilgi Toplumu Hizmetleri</a></li>
                         </ul>
                     </div>
 
@@ -51,12 +52,12 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-bold mb-6 font-heading text-white">Tıbbi Birimler</h3>
                         <ul className="space-y-3 text-gray-400 text-sm">
-                            <li><Link href="#" className="hover:text-action transition-colors">Acil Servis</Link></li>
-                            <li><Link href="#" className="hover:text-action transition-colors">Ağız ve Diş Sağlığı</Link></li>
-                            <li><Link href="#" className="hover:text-action transition-colors">Beslenme ve Diyet</Link></li>
-                            <li><Link href="#" className="hover:text-action transition-colors">Beyin ve Sinir Cerrahisi</Link></li>
-                            <li><Link href="#" className="hover:text-action transition-colors">Check-Up Merkezi</Link></li>
-                            <li><Link href="#" className="hover:text-action transition-colors">Çocuk Sağlığı ve Hastalıkları</Link></li>
+                            <li><a href="#" className="hover:text-action transition-colors">Acil Servis</a></li>
+                            <li><a href="#" className="hover:text-action transition-colors">Ağız ve Diş Sağlığı</a></li>
+                            <li><a href="#" className="hover:text-action transition-colors">Beslenme ve Diyet</a></li>
+                            <li><a href="#" className="hover:text-action transition-colors">Beyin ve Sinir Cerrahisi</a></li>
+                            <li><a href="#" className="hover:text-action transition-colors">Check-Up Merkezi</a></li>
+                            <li><a href="#" className="hover:text-action transition-colors">Çocuk Sağlığı ve Hastalıkları</a></li>
                         </ul>
                     </div>
 
@@ -83,9 +84,9 @@ export default function Footer() {
                 <div className="border-t border-primary-light pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-gray-500 text-xs">© 2026 İzmir Özel Tedavi. Tüm hakları saklıdır.</p>
                     <div className="flex space-x-6 text-xs text-gray-500">
-                        <Link href="#" className="hover:text-white transition-colors">Gizlilik Politikası</Link>
-                        <Link href="#" className="hover:text-white transition-colors">Çerez Politikası</Link>
-                        <Link href="#" className="hover:text-white transition-colors">Site Haritası</Link>
+                        <a href="#" className="hover:text-white transition-colors">Gizlilik Politikası</a>
+                        <a href="#" className="hover:text-white transition-colors">Çerez Politikası</a>
+                        <a href="#" className="hover:text-white transition-colors">Site Haritası</a>
                     </div>
                 </div>
             </div>
