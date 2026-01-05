@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Corporate Medical Palette - Modernized */
+  --color-primary: #0f172a;
+  /* Deep Navy Blue (Slate 900) - Authority */
+  --color-primary-light: #1e293b;
+  /* Slate 800 */
+  --color-action: #0ea5e9;
+  /* Sky 500 - Bright/Light Blue - Action/Modernity */
+  --color-action-hover: #0284c7;
+  /* Sky 600 */
+
+  --color-secondary: #f8f9fa;
+  /* Soft Grey */
+  --color-accent: #ef4444;
+  /* Red 500 - Emergency Only */
+
+  --color-text-main: #1f2937;
+  --color-text-light: #6b7280;
+  --color-background: #ffffff;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Outfit', system-ui, sans-serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-primary: var(--color-primary);
+  --color-primary-light: var(--color-primary-light);
+  --color-action: var(--color-action);
+  --color-action-hover: var(--color-action-hover);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-background: var(--color-background);
+  --color-text-main: var(--color-text-main);
+  --color-text-light: var(--color-text-light);
+
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  /* Headings in Navy */
 }
